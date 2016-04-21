@@ -1,0 +1,19 @@
+@prefix rdf: <http://www.w3c.org/1999/02/22/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf.schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix film: <urn:si2:films>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/A>.
+
+film:Jackson a film:Director;
+    foaf:name "Peter Jackson";
+    film:dirige film:hobbit.
+    
+
+film:hobbit a film:Pelicula;
+    film:titulo "El Hobbit";
+    film:anno   2012;
+    film:estrella   film:freeman;
+    film:estrella   film:mckellan.
+
+film:freeman foaf:name "Martin Freeman".
+film:mckellan foaf:name "Ian McKellan".
