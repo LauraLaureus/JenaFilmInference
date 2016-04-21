@@ -33,8 +33,8 @@ public class JenaFilmInference {
         String ns = "urn:si2:film";
         
         StmtIterator iter;
-        Resource juan = inference.getResource(ns+"juan");
-        iter = inference.listStatements(juan,RDF.type ,(RDFNode)null);
+        Resource jackson = inference.getResource(ns+"Jackson");
+        iter = inference.listStatements(jackson,null ,(RDFNode)null);
         while(iter.hasNext()){
             Statement statement = iter.nextStatement();
             System.out.println("--->" + PrintUtil.print(statement));
